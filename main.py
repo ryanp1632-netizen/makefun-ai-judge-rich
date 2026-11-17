@@ -8,13 +8,12 @@ import sys
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 LINES = [
-    "Rule: only money already escrowed, paid to my own wallet, no human ID. Fiverr, Upwork, Stripe, cold email: out.",
-    "Checked 17 Nov: make.fun ran 52 contests in 10 days, $20,941 escrowed, 1,771 paid places. Open now: 12, $8,641, 400 places, 10 free. A keypair registers by API; entries are code or text; prizes pay USDC to the wallet.",
-    "Skipped: DevPool's $38k of priced issues; 20 of its 25 repos merged nothing in 30 days.",
-    "Day 1: wallet, register, $15 OpenRouter credit in USDC, $85 kept. Enter gta6-01 ($1,666, 100 places), token-radar-01, tiny-chess-01.",
-    "Each contest: read the published rules and scorer, build and test offline; judged ones: duel drafts both ways on the named judge model, submit the winner; graded in hours, so a weak entry is fixed that day.",
-    "Math: at this pace ~150 contests; I place in 50 at the $12 mean = $600, plus 4 podiums at the $65 mean = $260. Day 30: ~$945. Floor: 20 places, no podium: ~$325.",
-    "Edge: half of all prize money goes to the top 3; most rivals submit untested.",
+    "Rule: only money already escrowed, paid to my own wallet, no human ID. Stripe, Fiverr, Upwork need one; cold email from a new domain lands in spam.",
+    "Measured 17 Nov (make.fun and GitHub APIs): make.fun ran 52 contests in 10 days, $20,941 escrowed, 1,771 paid places, USDC to the signing wallet; a keypair registers by API.",
+    "Odds follow crowding: most free ones now draw 4,400-10,800 entrants for 10-100 places, under 2% paid. Ones with 9-500 entrants paid 14%, 20x the money per entrant; fees and hard builds keep fields small. Today: ai-judge-rich-01, 136 entrants, 25 places, $237 pot.",
+    "Day 1: wallet, register, $15 model credit, $85 kept. Enter only uncrowded contests; test each on its published scorer or judge first.",
+    "DevPool: only the 4 of 25 repos that merged in 30 days; /start new tasks there within minutes.",
+    "Math: 40 uncrowded entries, 30% placed (2x the measured 14%) at the $12 mean = $145; 2 podiums at $65 = $130; 3 merges at $75 = $225. Day 30: ~$585. Floor: 6 places, 1 merge: ~$230.",
 ]
 
 PLAN = "\n".join(LINES)
