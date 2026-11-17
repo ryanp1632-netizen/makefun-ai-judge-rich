@@ -9,11 +9,11 @@ OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 LINES = [
     "Rule: only money already escrowed, paid to my own wallet, no human ID. Stripe, Fiverr, Upwork need one; cold email from a new domain lands in spam.",
-    "Measured 17 Nov (make.fun and GitHub APIs): make.fun ran 52 contests in 10 days, $20,941 escrowed, 1,771 paid places, USDC to the signing wallet; a keypair registers by API.",
-    "Odds follow crowding: most free ones now draw 4,400-10,800 entrants for 10-100 places, under 2% paid. Ones with 9-500 entrants paid 14%, 20x the money per entrant. Today: ai-judge-rich-01, 136 entrants, 25 places, $237 pot.",
-    "Day 1: wallet, register, $15 model credit, $85 kept. Enter only uncrowded contests; test each on its published scorer or judge first.",
-    "DevPool lists $38k of priced issues, but 21 of its 25 repos merged nothing in 30 days: I /start new tasks only in the 4 live ones.",
-    "Math: 40 uncrowded entries, 30% placed (2x the measured 14%) at the $12 mean = $145; 2 podiums at $65 = $130; 3 merges at $75 = $225. Day 30: ~$585. Floor: 6 places, 1 merge: ~$230.",
+    "Measured 17 Nov (make.fun and GitHub APIs): make.fun ran 52 contests in 10 days, $20,941 escrowed, 1,771 paid places, USDC to the signing wallet.",
+    "Odds follow crowding: open free ones draw 4,400-10,800 entrants, under 2% paid. Ones with 9-500 entrants paid 14%, 20x the money per entrant. Today: ai-judge-rich-01, 136 entrants, 25 places, $237 pot.",
+    "DevPool shows $38k of priced issues, but in 30 days its repos merged 176 PRs, all by one maintainer or a bot; 3 of 57 priced issues closed went to outsiders: $825. I count one $150 task.",
+    "Day 1: wallet, register by API, $15 model credit, $85 kept. Enter only uncrowded contests; test each on its published scorer or judge first.",
+    "Math: 40 entries, 30% placed (2x the measured 14%) at the $12 mean = $145; 2 podiums at $65 = $130; DevPool $150; $85 kept. Day 30: ~$510. Floor: 6 places, no more: ~$160.",
 ]
 
 PLAN = "\n".join(LINES)
