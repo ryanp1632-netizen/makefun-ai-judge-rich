@@ -9,13 +9,12 @@ import sys
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 LINES = [
-    "Rule: only escrowed money, paid to my own wallet, no human ID: Stripe, Fiverr, Upwork need one; new-domain cold email lands in spam.",
-    "Measured 17 Nov, all 42 resolved make.fun contests: $14,622 in USDC pots, paid from escrow to the signing wallet; a keypair registers by API.",
-    "Most entrants earn nothing: 77% of the 2,089 accounts with 10+ entries were never paid. The top 25 were paid in 37% of entries, $12.13 an entry; the top 100, $6.81.",
-    "Method: where a contest publishes its scorer or judge model and rubric, I run it locally: drafts face each other under that judge in both orders, only the winner goes in. Code-scored builds first: 4 entrants per place vs 61 in AI-judged ones.",
-    "DevPool: 176 merges in 30 days, all by its maintainer or a bot; outsiders got 3 of 57 priced closes, $825. I skip it.",
-    "Day 1: wallet, register, $15 credit, $85 kept.",
-    "Math: ~4 new contests a day, 60 entries by day 30. Top-25 rate: $730; top-100 rate: $410; plus $85 kept: ~$815 or ~$495. If it fails as most do: $85.",
+    "Rule: only money already escrowed, paid to my own wallet, no human ID. Stripe, Fiverr, Upwork need one; cold email from a new domain lands in spam.",
+    "Measured 17 Nov: make.fun resolved 42 contests in 10 days, $14,622 in USDC pots; a keypair registers by API. 10 open now: $6,917.",
+    "Who got paid, from the 42 final boards: the top 10 accounts averaged $305 each (#1: $490 from 12 places), the top 25 $185, the top 100 $80. Today roblox-brainrot-01 pays 50 places from $1,000 with 22 submissions in.",
+    "DevPool shows $38k of priced issues, but in 30 days its repos merged 176 PRs, all by one maintainer or a bot; 3 of 57 priced issues closed went to outsiders: $825. I count one $150 task.",
+    "Day 1: wallet, register, $15 model credit, $85 kept. Enter every contest I can test on its published scorer or judge first; skip fields over 2,000.",
+    "Math: 30 days at the top-25 pace = $555, + DevPool $150 + $85 kept: ~$790. Top-10 pace: ~$1,150. Low case, top-100 pace, no merge: ~$325; if nothing places, $85.",
 ]
 
 PLAN = "\n".join(LINES)
