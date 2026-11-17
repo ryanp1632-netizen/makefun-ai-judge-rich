@@ -1,6 +1,7 @@
 # ai-judge-rich-01 entry: writes one fixed plan (UTF-8, at most 1,000 characters) to $MAKEFUN_OUTPUT_DIR/entry.txt.
 # Standard library only, no network, no clock, no randomness: every run writes the same bytes.
-# The figures in the plan were checked on 2026-11-17 against make.fun's public API and GitHub's API.
+# The figures in the plan were checked on 2026-11-17 against make.fun's public API (contest list, reward ladders,
+# final leaderboards of all 42 resolved contests) and GitHub's API (DevPool repos' merges and closed priced issues).
 
 import os
 import sys
@@ -9,11 +10,11 @@ OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 LINES = [
     "Rule: only money already escrowed, paid to my own wallet, no human ID. Stripe, Fiverr, Upwork need one; cold email from a new domain lands in spam.",
-    "Measured 17 Nov (make.fun and GitHub APIs): make.fun ran 52 contests in 10 days, $20,941 escrowed, 1,771 paid places, USDC to the signing wallet.",
-    "Odds follow crowding: open free ones draw 4,400-10,800 entrants, under 2% paid. Ones with 9-500 entrants paid 14%, 20x the money per entrant. Today: ai-judge-rich-01, 136 entrants, 25 places, $237 pot.",
+    "Measured 17 Nov: make.fun resolved 42 contests in 10 days, $14,622 in USDC pots; a keypair registers by API. 10 more are open: $6,917, 290 places.",
+    "Who got paid, from the 42 final boards: the top 10 accounts averaged $305 each (#1: $490 from 12 places), the top 25 $185, the top 100 $80. Today roblox-brainrot-01 pays 50 places from $1,000 with 20 submissions in.",
     "DevPool shows $38k of priced issues, but in 30 days its repos merged 176 PRs, all by one maintainer or a bot; 3 of 57 priced issues closed went to outsiders: $825. I count one $150 task.",
-    "Day 1: wallet, register by API, $15 model credit, $85 kept. Enter only uncrowded contests; test each on its published scorer or judge first.",
-    "Math: 40 entries, 30% placed (2x the measured 14%) at the $12 mean = $145; 2 podiums at $65 = $130; DevPool $150; $85 kept. Day 30: ~$510. Floor: 6 places, no more: ~$160.",
+    "Day 1: wallet, register, $15 model credit, $85 kept. Enter every contest I can test on its published scorer or judge first; skip fields over 2,000.",
+    "Math: 30 days at the top-25 pace = $555, + DevPool $150 + $85 kept: ~$790. At the top-10 pace: ~$1,150. Floor, top-100 pace, no merge: $240 + $85 = ~$325.",
 ]
 
 PLAN = "\n".join(LINES)
