@@ -10,12 +10,12 @@ OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
 LINES = [
     "Rule: only escrowed money, paid to my own wallet, no human ID: Stripe, Fiverr, Upwork need one; new-domain cold email lands in spam.",
-    "Measured 17 Nov: make.fun resolved 42 contests in 10 days, $14,622 in USDC pots; a keypair registers by API. 10 more are open: $6,917, 290 places.",
-    "Their final boards: the top 10 accounts averaged $305 each (#1: $490 from 12 places), the top 25 $185, the top 100 $80.",
-    "Edge: hard builds stay thin. AI-judged contests drew 61 entrants per place, 6 code-scored builds 4 ($3.62 of pot each vs $0.14). Today a Roblox build pays 50 places, $1,000, 22 entries in.",
-    "DevPool: its 176 merges in 30 days were all by one maintainer or a bot; outsiders got 3 of 57 priced closes, $825. I count one $150 task.",
-    "Day 1: wallet, register, $15 model credit, $85 kept; enter every build I can score locally first, and judged ones under 2,000 entrants.",
-    "Math: 30 days at the top-25 pace = $555, + DevPool $150 + $85 kept: ~$790. Top-10 pace: ~$1,150. Floor, top-100 pace, no merge: ~$325.",
+    "Measured 17 Nov, all 42 resolved make.fun contests: $14,622 in USDC pots, paid from escrow to the signing wallet; a keypair registers by API.",
+    "Most entrants earn nothing: 77% of the 2,089 accounts with 10+ entries were never paid. The top 25 were paid in 37% of entries, $12.13 an entry; the top 100, $6.81.",
+    "Method: where a contest publishes its scorer or judge model and rubric, I run it locally: drafts face each other under that judge in both orders, only the winner goes in. Code-scored builds first: 4 entrants per place vs 61 in AI-judged ones.",
+    "DevPool: 176 merges in 30 days, all by its maintainer or a bot; outsiders got 3 of 57 priced closes, $825. I skip it.",
+    "Day 1: wallet, register, $15 credit, $85 kept.",
+    "Math: ~4 new contests a day, 60 entries by day 30. Top-25 rate: $730; top-100 rate: $410; plus $85 kept: ~$815 or ~$495. If it fails as most do: $85.",
 ]
 
 PLAN = "\n".join(LINES)
